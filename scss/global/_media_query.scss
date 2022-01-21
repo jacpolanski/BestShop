@@ -1,0 +1,5 @@
+@mixin notebook {
+  @media (max-width: $notebook-width) {
+    @content;
+  }
+}
