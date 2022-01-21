@@ -1,0 +1,31 @@
+.btn {
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  padding: 16px 65px;
+  border-radius: var(--button-radius);
+  border: none;
+  text-decoration: none;
+}
+
+.btn_default {
+  background-color: var(--color-primary);
+  border-radius: var(--button-radius);
+  box-shadow: 3px 10px 14px var(--color-primary-shadow);
+}
+
+.btn_red {
+  background-color: var(--color-redish);
+}
+
+.btn_green {
+  background-color: var(--color-green);
+}
+
+.btn_big {
+  padding: 22px 155px;
+}
+
+.btn:hover{
+  filter: blur(0.2px) brightness(1.1) hue-rotate(5deg) saturate(1.3) sepia(0.4);
+}

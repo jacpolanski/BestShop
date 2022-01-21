@@ -1,0 +1,17 @@
+.opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening-header{
+  padding-top: 130px;
+  font-family: var(--font-raleway);
+  font-size: 49px;
+}
+
+.opening-text{
+  font-family: var(--font-open-sans);
+  margin: 20px 0 38px 0;
+}
