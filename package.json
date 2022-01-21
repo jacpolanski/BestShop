@@ -1,0 +1,23 @@
+{
+  "name": "sass",
+  "version": "2.0.0",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.42.1"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "css-reset-and-normalize-sass": "^0.1.2",
+    "sass-reset": "^1.0.4"
+  }
+}
