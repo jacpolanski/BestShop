@@ -1,3 +1,4 @@
+// Ścieżka do aktualnie wykonywanego zadania
 const entryPath = ".";
 
 const gulp = require("gulp");
@@ -8,12 +9,12 @@ const browserSync = require("browser-sync").create();
 
 function compileSass(done) {
   gulp
-    .src(entryPath + "/scss/main.scss")
-    .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest(entryPath + "/css"));
+      .src(entryPath + "/scss/main.scss")
+      .pipe(sourcemaps.init())
+      .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
+      .pipe(autoprefixer())
+      .pipe(sourcemaps.write("."))
+      .pipe(gulp.dest(entryPath + "/css"));
 
   done();
 }
@@ -23,7 +24,7 @@ function watcher(done) {
     server: "./" + entryPath,
   });
 
-  gulp.watch(entryPath + "/reset_scss/**/*.reset_scss", gulp.series(compileSass, reload));
+  gulp.watch(entryPath + "/scss/**/*.scss", gulp.series(compileSass, reload));
   gulp.watch(entryPath + "/*.html", gulp.series(reload));
 
   done();

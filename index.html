@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop</title>
-    <link rel="stylesheet" href="css/main.css">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext"
           rel="stylesheet"/>
-
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -24,6 +25,12 @@
                 BestShop
             </a>
             <nav class="page-nav">
+                <input type="checkbox" class="menu-btn" id="menu-btn">
+                <label for="menu-btn" class="menu-click">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="page-nav-list">
                     <li><a href="#why">why us</a></li>
                     <li><a href="#benefits">benefits</a></li>
@@ -36,7 +43,7 @@
     <section class="opening">
         <h2 class="opening-header">Sell More!</h2>
         <p class="opening-text">Open shop on our platform and increase your sales</p>
-        <a href="" class="btn btn_default btn_big">Open your shop</a>
+        <a href="" class="btn btn-default btn-big">Open your shop</a>
     </section>
 </section>
 
@@ -106,19 +113,21 @@
             </div>
         </div>
 
-        <div class="main-content-article">
-            <div class="main-content-article-text">
-                <h2 class="main-content-article-title">Increase recognition your brand!</h2>
-                <p class="main-content-article-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
+        <div class="trumpet-container">
+            <div class="main-content-article">
+                <div class="main-content-article-text">
+                    <h2 class="main-content-article-title">Increase recognition your brand!</h2>
+                    <p class="main-content-article-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                </div>
             </div>
             <div class="main-content-article-img">
                 <img src="assets/Trumpet.png" alt="Trumpet"/>
             </div>
         </div>
-
     </div>
 </main>
 
@@ -159,7 +168,7 @@
                 <li class="pricing-point">One years licence</li>
                 <li class="pricing-point-not">Full support</li>
             </ul>
-            <a href="#" class="btn btn--primary">Begin</a>
+            <a href="#" class="btn">Begin</a>
         </div>
 
         <div class="pricing-box-premium">
@@ -206,11 +215,11 @@
         <form class="form">
             <div class="form-field">
                 <label class="form-label" for="name">Name</label>
-                <input type="text" class="form-input-name" id="name" />
+                <input type="text" class="form-input-name" id="name"/>
             </div>
             <div class="form-field">
                 <label class="form-label" for="email">E-mail</label>
-                <input type="email" class="form-input-email" id="email" />
+                <input type="email" class="form-input-email" id="email"/>
             </div>
 
             <div class="form-agree">
@@ -228,7 +237,7 @@
                     </p>
                 </label>
             </div>
-            <button type="submit" class="btn btn_default">Send</button>
+            <button type="submit" class="btn btn-default">Send</button>
         </form>
     </div>
 </section>

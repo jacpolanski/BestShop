@@ -23,3 +23,10 @@
 @import "components/pricing";
 @import "components/contact";
 @import "components/footer";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,6 +1,5 @@
 .page-header {
   position: fixed;
-  min-width: $container-width;
   background: $color-white;
   width: 100%;
   box-shadow: 0 3px 6px #00000029;
@@ -32,10 +31,7 @@
       display: flex;
 
       li {
-        font-family: $font-open-sans;
-        font-size: 16px;
-        font-weight: 700;
-        padding: 0 26px;
+        padding: 0;
 
         &:last-child {
           padding-right: 0;
@@ -46,20 +42,102 @@
         text-decoration: none;
         color: $color-grey;
         font-weight: 700;
-        font-size: 11px;
+        font-size: .6rem;
         text-transform: uppercase;
         padding: 28px 18px 22px;
         border-bottom: 4px solid transparent;
         transition: 1s;
+        letter-spacing: 0.2rem;
 
         &:hover {
           color: $color-black;
           border-color: $color-primary;
         }
       }
+      @include mobile {
+        position: absolute;
+        left: 0;
+        top: 95px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 20px;
+        display: none;
+
+        li {
+          padding: 0;
+        }
+
+        a {
+          display: block;
+          padding: 10px 20px;
+        }
+      }
+    }
+
+
+
+    &__nav {
+      display: flex;
+    }
+
+    .menu {
+      &-btn {
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        opacity: 0;
+
+        @include mobile {
+          &:checked {
+            ~ .page-nav-list {
+              display: flex;
+            }
+
+            ~ .menu-click {
+              span {
+                &:nth-child(1) {
+                  transform: rotate(45deg) translate(2px, 5px);
+                }
+
+                &:nth-child(2) {
+                  opacity: 0;
+                }
+
+                &:nth-child(3) {
+                  transform: rotate(-45deg) translate(2px, -5px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &-click {
+        display: none;
+
+        span {
+          width: 20px;
+          height: 2px;
+          display: block;
+          margin-bottom: 3px;
+          background-color: $color-primary;
+          transition: .3s all ease-in-out;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        @include mobile {
+          display: block;
+        }
+      }
     }
   }
 }
+
 
 
 

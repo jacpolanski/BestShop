@@ -1,3 +1,8 @@
+:root{
+  font-size: $main-font-size;
+  width: 100vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +10,14 @@
 }
 
 body {
-  font-family: var(--font-raleway);
+  font-family: $font-raleway;
 }
 
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: var(--container-width);
-  /*max-width: 80vh;*/
+  max-width: $container-width;
+  padding: 0 15px;
 }
 
 a.anchor {
@@ -22,6 +27,6 @@ a.anchor {
 }
 
 h2 {
-  font-family: var(--font-raleway);
-  font-size: 36px;
+  font-family: $font-raleway;
+  font-size: 2.25rem;
 }
