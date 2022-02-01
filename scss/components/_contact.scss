@@ -2,10 +2,19 @@
   padding: 80px 100px 100px;
   display: flex;
   justify-content: center;
+
+  @include mobile {
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
 }
 
 .contact-col {
   width: 50%;
+  @include mobile {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .contact-title {

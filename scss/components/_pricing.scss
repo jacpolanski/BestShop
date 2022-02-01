@@ -5,6 +5,10 @@
     margin-bottom: 60px;
     text-align: center;
 
+    @include mobile {
+      padding-top: 1.5rem;
+    }
+
     .pricing-type {
       font-size: 20px;
       font-family: $font-raleway;
@@ -95,12 +99,14 @@
       align-items: center;
       border: 1px solid $accent-color;
       transition: $btn-transition;
+      position: relative;
 
       @include mobile {
-        max-width: 370px;
-        min-height: 100px;
+        max-width: 300px;
+        min-height: 1px;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-bottom: 3rem;
       }
 
       @include pricingTitle($accent-color);
@@ -112,6 +118,12 @@
         bottom: $btn-down;
         font-size: 13px;
         background-color: $accent-color;
+
+        @include mobile {
+          position: absolute;
+          bottom: $btn-down-mobile;
+          left: calc(50% - 85px);
+        }
       }
 
       &:hover {
@@ -120,6 +132,15 @@
         margin: 0 -15px;
         box-shadow: 5px 1px 27px $color-primary-shadow;
         $btn-down: -95px;
+
+        @include mobile {
+          max-width: 300px;
+          height: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-bottom: 3rem;
+          box-shadow: 0 8px 8px -4px black;
+        }
       }
     }
   }
@@ -136,6 +157,15 @@
     align-items: center;
     border: 1px solid $accent-color;
     transition: $btn-transition;
+    position: relative;
+
+    @include mobile {
+      max-width: 300px;
+      min-height: 1px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
 
     &:hover {
       width: 400px;
@@ -143,6 +173,15 @@
       margin: 0 45px;
       box-shadow: 5px 1px 27px $color-primary-shadow;
       $btn-down: -95px;
+
+      @include mobile {
+        max-width: 300px;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        box-shadow: 0 8px 8px -4px black;
+      }
     }
 
     .btn {
@@ -151,6 +190,12 @@
       font-size: 13px;
       background-color: $accent-color;
       transition: $btn-transition;
+
+      @include mobile {
+        position: absolute;
+        left: 20%;
+        bottom: $btn-down-mobile;
+      }
     }
 
     @include pricingTitle($accent-color);
@@ -168,6 +213,15 @@
     align-items: center;
     border: 1px solid $accent-color;
     transition: $btn-transition;
+    position: relative;
+
+    @include mobile {
+      max-width: 300px;
+      min-height: 1px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
 
     &:hover {
       width: 400px;
@@ -175,6 +229,15 @@
       margin: 0 -15px;
       box-shadow: 5px 1px 27px $color-primary-shadow;
       $btn-down: -95px;
+
+      @include mobile {
+        max-width: 300px;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 3rem;
+        box-shadow: 0 8px 8px -4px black;
+      }
     }
 
     .btn {
@@ -183,6 +246,12 @@
       font-size: 13px;
       background-color: $accent-color;
       transition: $btn-transition;
+
+      @include mobile {
+        position: absolute;
+        left: 20%;
+        bottom: $btn-down-mobile;
+      }
     }
 
     @include pricingTitle($accent-color);
