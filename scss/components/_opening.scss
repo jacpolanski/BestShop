@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
 
+
   &-header{
     padding-top: 8rem;
     font-family: $font-raleway;
@@ -12,5 +13,10 @@
   &-text{
     font-family: $font-open-sans;
     margin: 1.3rem 0 2.4rem 0;
+    padding: 0 1rem;
+  }
+  a{
+    margin: 0 .3rem;
+
   }
 }

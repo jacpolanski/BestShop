@@ -122,7 +122,7 @@
         @include mobile {
           position: absolute;
           bottom: $btn-down-mobile;
-          left: calc(50% - 85px);
+          left: 32.5%;
         }
       }
 
@@ -193,7 +193,7 @@
 
       @include mobile {
         position: absolute;
-        left: 20%;
+        left: 32.5%;
         bottom: $btn-down-mobile;
       }
     }
@@ -249,7 +249,7 @@
 
       @include mobile {
         position: absolute;
-        left: 20%;
+        left: 32.5%;
         bottom: $btn-down-mobile;
       }
     }

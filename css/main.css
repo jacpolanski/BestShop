@@ -544,7 +544,7 @@ h2 {
   color: white;
   font-weight: bold;
   display: inline-block;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   border-radius: 35px;
   border: none;
   text-decoration: none;
@@ -554,8 +554,22 @@ h2 {
   border-radius: 35px;
   box-shadow: 3px 10px 14px rgba(7, 172, 230, 0.16);
 }
+@media (max-width: 792px) {
+  .btn-default {
+    border-radius: 70px;
+    font-size: 0.8rem;
+  }
+}
 .btn-big {
-  padding: 1.4rem 9.5rem;
+  text-align: center;
+  width: 400px;
+  max-width: 90%;
+  padding: 1.4rem 1rem;
+}
+@media (max-width: 792px) {
+  .btn-big {
+    padding: 1.4rem 1rem;
+  }
 }
 .btn:hover {
   filter: blur(0.2px) brightness(1.1) hue-rotate(5deg) saturate(1.3) sepia(0.4);
@@ -696,6 +710,10 @@ h2 {
 .opening-text {
   font-family: "Open Sans", sans-serif;
   margin: 1.3rem 0 2.4rem 0;
+  padding: 0 1rem;
+}
+.opening a {
+  margin: 0 0.3rem;
 }
 
 .statistics {
@@ -1134,7 +1152,7 @@ h2 {
   .pricing-boxes .pricing-box-basic .btn {
     position: absolute;
     bottom: -24px;
-    left: calc(50% - 85px);
+    left: 32.5%;
   }
 }
 .pricing-boxes .pricing-box-basic:hover {
@@ -1200,7 +1218,7 @@ h2 {
 @media (max-width: 792px) {
   .pricing .pricing-box-professional .btn {
     position: absolute;
-    left: 20%;
+    left: 32.5%;
     bottom: -24px;
   }
 }
@@ -1313,7 +1331,7 @@ h2 {
 @media (max-width: 792px) {
   .pricing .pricing-box-premium .btn {
     position: absolute;
-    left: 20%;
+    left: 32.5%;
     bottom: -24px;
   }
 }
@@ -1421,7 +1439,7 @@ h2 {
   padding: 11px 20px;
   line-height: 1em;
   font-size: 0.8125rem;
-  box-shadow: 0px 3px 6px rgba(7, 172, 230, 0.16);
+  box-shadow: 0 3px 6px rgba(7, 172, 230, 0.16);
   margin-bottom: 20px;
   background-color: #ffffff;
 }
@@ -1497,7 +1515,7 @@ h2 {
 }
 .calc__summary .summary__total,
 .calc__summary .list__item {
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 6px;
   justify-content: space-between;
   align-items: center;
@@ -1565,15 +1583,22 @@ h2 {
 
 .contact-detail {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   color: var(--color-grey);
   align-items: center;
+}
+@media (max-width: 792px) {
+  .contact-detail {
+    justify-content: space-between;
+  }
 }
 
 .contact-detail-text {
   color: var(--color-grey);
   font-weight: 500;
   text-decoration: none;
+  margin-top: 10px;
   margin-right: 20px;
 }
 
