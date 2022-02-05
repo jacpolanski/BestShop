@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BestShop</title>
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700,800&display=swap&subset=latin-ext"
           rel="stylesheet"/>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 
@@ -185,6 +185,76 @@
                 <li class="pricing-point">Full support</li>
             </ul>
             <a href="#" class="btn">Begin</a>
+        </div>
+    </div>
+</section>
+
+<!--CALCULATOR SECTION-->
+
+<section class="calc">
+    <h2>Calculate how much you’ll pay</h2>
+
+    <div class="calc__columns">
+        <form class="calc__form">
+            <div class="calc__input">
+                <input type="number" class="form__input" id="products" min="1" step="1" placeholder="Products quantity"/>
+            </div>
+            <div class="calc__input">
+                <input type="number" class="form__input" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+            </div>
+            <div class="calc__select" id="package" data-value="">
+                <div class="select__input">
+                    Choose package
+                </div>
+
+                <ul class="select__dropdown">
+                    <li data-value="basic">Basic</li>
+                    <li data-value="professional">Professional</li>
+                    <li data-value="premium">Premium</li>
+                </ul>
+            </div>
+            <label class="form__checkbox form-checkbox">
+                <input type="checkbox" id="accounting"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Accounting</p>
+            </label>
+            <label class="form__checkbox form-checkbox">
+                <input type="checkbox" id="terminal"/>
+                <span class="checkbox"></span>
+                <p class="consent__text">Rental of a payment terminal</p>
+            </label>
+        </form>
+
+        <div class="calc__summary">
+            <ul>
+                <li class="list__item" data-id="products">
+                    <span class="item__type">Products</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="orders">
+                    <span class="item__type">Orders</span>
+                    <span class="item__calc">20 * $0.5</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="package">
+                    <span class="item__type">Package</span>
+                    <span class="item__calc">Premium</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="accounting">
+                    <span class="item__type">Accounting</span>
+                    <span class="item__price">$10</span>
+                </li>
+                <li class="list__item" data-id="terminal">
+                    <span class="item__type">Terminal</span>
+                    <span class="item__price">$10</span>
+                </li>
+            </ul>
+            <div class="summary__total" id="total-price">
+                <span>Total</span>
+                <span class="total__price">$700</span>
+            </div>
         </div>
     </div>
 </section>
