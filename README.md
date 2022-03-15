@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/jacpolanski/BestShop/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+# BestShop
+> Responsive web design, created in learning process at CodersLab bootcamp, evolving from plain HTML/SCC through SCSS to JS.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> Live demo [_here_](https://jacpolanski.github.io/BestShop/)
 
-### Markdown
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Contact](#contact)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## General Information
+- Project created in learning process at CodersLab bootcamp
+- Evolving in weekly periods as progress of learning topics
+- Started as plain HTML/CSS
+- Rewritten to SCSS and added responsiveness
+- Added JavaScript pricing calculator
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+## Technologies Used
+- HTML
+- SCSS
+- JavaScript
 
-**Bold** and _Italic_ and `Code` text
+## Screenshots
+![1](./screenshots/1.png)
+![2](./screenshots/2.png)
+![3](./screenshots/3.png)
+![4](./screenshots/4.png)
+![5](./screenshots/5.png)
+![6](./screenshots/6.png)
+![7](./screenshots/7.png)
+![8](./screenshots/8.png)
+![9](./screenshots/9.png)
+![10](./screenshots/10.png)
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jacpolanski/BestShop/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## Setup
+- download or clone repository / `git clone repo_address`
+- install dependencies / `npm install`
+- start by `gulp`
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Project Status
+Project is: _no longer being worked on_. Assumed learning taks completed.
+
+
+## Room for Improvement
+Plenty :)
+
+## Contact
+Created by [_jac.polanski_](https://www.linkedin.com/in/polanski-jacek/) - feel free to contact me!
