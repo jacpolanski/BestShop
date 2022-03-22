@@ -24,7 +24,7 @@
 
 
 ## Technologies Used
-- HTML
+- HTML 
 - SCSS
 - JavaScript
 
